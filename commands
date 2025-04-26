@@ -1,0 +1,9 @@
+mkdir && cd leakhawk
+python3 -m venv venv
+source venv/bin/activate
+
+nano .env
+nano main.py
+
+ uvicorn main:app --host 0.0.0.0 --port 8000 
+ngrok http 8000
